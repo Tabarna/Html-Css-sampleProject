@@ -1,0 +1,62 @@
+
+form{
+	
+	text-align: right;
+	
+}
+h3{
+	color: white;
+}
+p{
+	text-align: center;
+}
+
+body{
+	border: grey solid;
+	background-color: skyblue;
+		text-align: center;
+	color: green;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+textarea{
+
+	height: 70px;
+	width: 600px;
+}
+h2{
+	color: green;
+}
+.button{
+
+	background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+	justify-content: center;
+	
+	
+}
+
+ img {
+  background: #eaeaed;
+  border: 1px solid #9799a7;
+  float: left;
+  margin: 8px 0 0 20px;
+  padding: 4px;
+ 
+}
+
+.a1{
+	line-height: 1.6;
+	
+}
+.a{
+	border: 3px solid grey;
+	padding: 20px;
+}

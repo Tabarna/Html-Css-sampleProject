@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Survey website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<script>
+		function validateform(){
+			var mobile = document.myform.mobile.value;
+			var zipcode= document.myform.zipcode.value;
+			
+			 if(zipcode.length<6 || zipcode.length>6){
+				alert("Zipcode must be 6 digits");
+				return false;
+			}else	if (mobile.length>10 || mobile.length<10) {
+                alert("Mobile no must be 10 digits");
+                return false;
+			}else{
+				alert("Thanks for the Registration....")
+			}
+		}
+	</script>
+	<h1> Product Satisfaction Survey Form</h1>
+    <h3>Please take a few moments to complete the survey</h2>
+ 
+<form name="myform" method="post" action="home.html" onsubmit="return validateform()">
+	<div class = "a">
+		<img src="survey.png">
+		<br>
+		<label>FirstName:</label>
+		<input type="text" name="firstname" required placeholder="Firstname">
+	
+
+	<br><br>
+		
+		<label>Lastname:</label>
+		<input type="text" name="lastname"  required placeholder="Lastname">
+	
+	<br><br>
+	<div class ="a1">
+		<label>Address:</label>
+		<input type="text" name="text"  required placeholder="Enter your Address"><br>
+		<input type="text" name="city"  required placeholder="City"><br>
+		<input type="text" name="state"  required placeholder="State"><br>
+		<input type="number" name="zipcode"  required placeholder="Zipcode"><br>
+	</div>
+	<br>
+	
+	
+	
+	
+		<label>EmailId:</label>
+		<input type="email" name="email" required placeholder="enter email id" >
+	
+	<br>
+	<br>
+	
+		<label>Contact Number:</label>
+		<input type="number" name="mobile" required placeholder="Enter 10 digit number">
+	</div>
+	<br>
+	
+	<div>
+		<label>How long have you been using this product and why?</label><br><br>
+		<textarea></textarea>
+	</div>
+	<br>
+	<div>
+		<label>Write your comments and suggestions about our products in comparision with other competitors:</label>
+		<br> <br>
+		<textarea></textarea>
+	</div>
+	<br>
+	<div>
+		<label>Are you satisfied with our products performance? share your opinions:</label>
+		<br><br><textarea></textarea>
+	</div>
+	<br>
+	<div>
+		<label>Tell us something about your shopping experiences to buy our products</label>
+		<br><br><textarea></textarea>
+	</div>
+	<br>
+	<div>
+		<label>Would you continue with our product? if No why?</label>
+		<br><br><textarea></textarea>
+	</div>
+	<h2 align="center"> Thank you for completing this survey!</h2>
+	<button class="button" value="registered">Submit</button>
+	<!--<div class="button">
+	<input type="submit" value="Submit">
+<button class="button" value="registered">Submit</button>
+</div>-->
+
+
+
+</form>
+<p>If you click submit, without filling out the text field,
+your browser will display an error message.</p>
+</body>
+</html>
